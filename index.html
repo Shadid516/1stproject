@@ -85,11 +85,15 @@
         <h6><sup>*consent not required <small>*form not functional</small></sup></h6>
         <form action>
             <label for><b>First Name: </b></label>
-            <input type="text" value="First name"><br>
+            <input type="text" placeholder="First name" minlength="2" maxlength="13" required>
+            <br>
             <label for><b>Last Name: </b></label>
-            <input type="text" value="Last name"><br>
+            <input type="text" placeholder="Last name" minlength="2" maxlength="13" required>
+            <br>
+            <label for="">Age:</label>
+            <input type="number" size="40" placeholder="13+" minlength="13" maxlength="114" required>
             <label for><b>Email: </b></label>
-            <input type="email" value="@gmail.com">
+            <input type="email" placeholder="JohnDoe84@gmail.com" minlength="11" maxlength="25" required>
             <br>
             <label for><b><small>Social</small>Security Number</b></label>
             <input type="number">
@@ -107,7 +111,7 @@
             <label for>Evil Activities</label>
             <input type="checkbox" name="hobbies" id="killingbees">
             <label for>Killing Bees</label>
-            <input type="checkbox" name="hobbies" id="scoldingpuppies">
+            <input type="checkbox" name="hobbies" id="scoldingpuppies"  required>
             <label for>Scolding Puppies</label>
             <br>
             <label for><b> Date of birth</b></label>
@@ -121,7 +125,7 @@
             <br><i>Or alternatively</i>
             <br>
             <label for>Send your/their CV:</label>
-            <input type="file" name id>
+            <input type="file" multiple name id>
             <input type="submit" value="Submit">
             <br>
             <br>
@@ -136,7 +140,10 @@
             <br>
             <label for="">Reset:</label>
             <input type="reset" size="80" value="">
-            
+            <br>
+            <br>
+            <abbr title="Arab Open University">AOU</abbr>
+            <bdo dir="rtl">Bdo tag test</bdo>
 
             <h1><b>This is a parody learning site.</b></h1>
         </form>
