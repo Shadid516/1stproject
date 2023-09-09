@@ -22,12 +22,12 @@
             }
             h1{
                 color: rgb(54, 73, 90);
-                word-spacing: normal;
+                word-spacing: 15px;
                 text-align: center;
                 letter-spacing: 3px;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                margin: 0; /* Add this to remove any default margin */
             }
+
             p{
                 color: hotpink;
                 background-color: rgb(154, 248, 248);
@@ -53,10 +53,13 @@
                 background-attachment: fixed;
                 outline: 2px ridge rgb(221, 132, 132);
                 display: flex;
-                align-items: center;
-                margin: 0; /* Add this to remove any default margin */
+                justify-content: center; /* Horizontally center the content */
+                align-items: center; /* Vertically center the content */
+                text-align: center; /* Center the text within the container */
             }
-
+            .text-container {
+                max-width: 50%; /* Set a maximum width for the text container */
+            }
             img{
                 width: 100px;
                 height: auto;
@@ -97,7 +100,11 @@
                 eligendi illum vero, nam error obcaecati.</p>
         </div>
 
-        <h1 class="divreplace">Enter a world of high design and excellence</h1>
+        <div class="divreplace">
+            <div class="text-container">
+                <h1>Enter a world of high design and excellence</h1>
+            </div>
+        </div>
         <p class="para1"
             style="color: hotpink; text-align: justify; text-transform: lowercase;">Lorem
             ipsum dolor, sit amet consectetur adipisicing elit. Eligendi sed
