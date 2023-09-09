@@ -110,6 +110,39 @@
             div form input:invalid{
                 box-shadow: 0 0 2px 2px red;
             }
+            div form input::placeholder{
+                color: chocolate;
+            }
+            h2{
+                color: hotpink;
+                background-color: rgb(154, 248, 248);
+            }
+            h2::before{
+                content: "Inserted before using Pseudo-elements";
+                color: lightgreen;
+            }
+            h2::after{
+                content: "Inserted after using Pseudo-elements";
+                color: lightpink;
+            }
+            *::selection{
+                background-color: yellow;
+                color: orangered;
+            }
+            ::marker{
+                color: lawngreen;
+                list-style-type: disc;
+            }
+            ul{
+                padding-left: 20px;
+                background-color: rgb(154, 248, 248);
+            }
+            label{
+                margin: 15px 0 0 10px;
+            }
+            input{
+                margin: 10px 0 0 10px;
+            }
         </style>
     </head>
     <body>
@@ -136,32 +169,37 @@
                 minus
                 saepe asperiores fugit voluptatem. Libero doloremque ratione
                 eligendi illum vero, nam error obcaecati.</p>
-            </div>
-        
-        
+        </div>
 
         <div class="divreplace">
             <div class="text-container">
                 <h1>Enter a world of high design and excellence</h1>
             </div>
         </div>
-
+        
         <div>
-            <form action="">
-                <label for="">First Name:</label>
-                <input required type="text" name="" id="">
+            <form action>
                 <br>
-                <label for="">Last Name:</label>
-                <input required type="email" name="" id="">
+                <label for>First Name:</label>
+                <input required type="text" name id placeholder="John">
                 <br>
-                <label for="">Keep info private?</label>
-                <input type="checkbox" name="" id=""><label for="">Yes</label>
-                <input type="checkbox"><label for="">no</label>
+                <label for>Last Name:</label>
+                <input required type="email" name id placeholder="Doe">
                 <br>
-                <input type="submit" style="background-color: rgb(255, 169, 251);">
+                <label for>Keep info private?</label>
+                <input type="checkbox" name id><label for>Yes</label>
+                <input type="checkbox"><label for>no</label>
+                <br>
+                <input type="submit"
+                    style="background-color: rgb(255, 169, 251);">
             </form>
         </div>
-        
+        <h2>H2 tag</h2>
+        <ul>
+            <li>one </li>
+            <li>two </li>
+            <li>three</li>
+        </ul>
         <p class="para1"
             style="color: hotpink; text-align: justify; text-transform: lowercase;">Lorem
             ipsum dolor, sit amet consectetur adipisicing elit. Eligendi sed
