@@ -94,6 +94,22 @@
             div ul li:nth-child(2n+1){
                 background-color: aqua;
             }
+            input:focus{
+                background-color: cadetblue;
+                color: whitesmoke;
+            }
+            div form{
+                background-color: rgb(154, 248, 248);
+            }
+            div form input[type="checkbox"]:checked{
+                box-shadow: 0 0 3px 2px pink;
+            }
+            div form input:required{
+                border: 2px solid rgb(39, 255, 68);
+            }
+            div form input:invalid{
+                box-shadow: 0 0 2px 2px red;
+            }
         </style>
     </head>
     <body>
@@ -121,16 +137,7 @@
                 saepe asperiores fugit voluptatem. Libero doloremque ratione
                 eligendi illum vero, nam error obcaecati.</p>
             </div>
-        <div>
-            <ul>
-                <li>1st</li>
-                <li>2nd</li>
-                <li>3rd</li>
-                <li>4th</li>
-                <li>5th</li>
-                <li>6th</li>
-            </ul>
-        </div>
+        
         
 
         <div class="divreplace">
@@ -139,7 +146,22 @@
             </div>
         </div>
 
-
+        <div>
+            <form action="">
+                <label for="">First Name:</label>
+                <input required type="text" name="" id="">
+                <br>
+                <label for="">Last Name:</label>
+                <input required type="email" name="" id="">
+                <br>
+                <label for="">Keep info private?</label>
+                <input type="checkbox" name="" id=""><label for="">Yes</label>
+                <input type="checkbox"><label for="">no</label>
+                <br>
+                <input type="submit" style="background-color: rgb(255, 169, 251);">
+            </form>
+        </div>
+        
         <p class="para1"
             style="color: hotpink; text-align: justify; text-transform: lowercase;">Lorem
             ipsum dolor, sit amet consectetur adipisicing elit. Eligendi sed
