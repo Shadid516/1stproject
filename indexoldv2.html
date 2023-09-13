@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <script src="https://kit.fontawesome.com/03a984678f.js"
+        crossorigin="anonymous"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Shadid learning site V2</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            
+            *{
+                margin: 0;
+                padding: 0;
+                
+            }
+            h1{
+                color: rgb(54, 73, 90);
+                word-spacing: 15px;
+                text-align: center;
+                letter-spacing: 3px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            p{
+                color: hotpink;
+                background-color: rgb(154, 248, 248);
+            }
+            .para1{
+                color: indigo;
+                min-width: 100px;
+                text-transform: capitalize;
+                padding: 20px;
+                text-indent: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #para2{
+                color:royalblue;
+                text-align: center;
+            }
+            .divreplace {
+                background-image: url('images/pic1.jpeg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 100vh;
+                background-attachment: fixed;
+                outline: 2px ridge rgb(221, 132, 132);
+                display: flex;
+                justify-content: center; /* Horizontally center the content */
+                align-items: center; /* Vertically center the content */
+                text-align: center; /* Center the text within the container */
+            }
+            .text-container {
+                max-width: 50%; /* Set a maximum width for the text container */
+            }
+            img{
+                width: 100px;
+                height: auto;
+            }
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'Comic Neue', cursive;
+            }
+            .group{
+                display: inline-flex;
+            }
+            .positions{
+                position: relative;
+            }
+            .positions .positions2{
+                position: absolute;
+                top: 30%;
+                left: 40%;
+                bottom: 20%;
+                right: 90%;
+            }
+            .positions .positions3{
+                position: sticky;
+                top: 0;
+            }
+            .basedlmao{
+                width: 300px;
+                height: 200px;
+
+            }
+            div ul li:nth-child(2n+1){
+                background-color: aqua;
+            }
+            input:focus{
+                background-color: cadetblue;
+                color: whitesmoke;
+            }
+            div form{
+                background-color: rgb(154, 248, 248);
+            }
+            div form input[type="checkbox"]:checked{
+                box-shadow: 0 0 3px 2px pink;
+            }
+            div form input:required{
+                border: 2px solid rgb(39, 255, 68);
+            }
+            div form input:invalid{
+                box-shadow: 0 0 2px 2px red;
+            }
+            div form input::placeholder{
+                color: chocolate;
+            }
+            h2{
+                color: hotpink;
+                background-color: rgb(154, 248, 248);
+            }
+            h2::before{
+                content: "Inserted before using Pseudo-elements";
+                color: lightgreen;
+            }
+            h2::after{
+                content: "Inserted after using Pseudo-elements";
+                color: lightpink;
+            }
+            *::selection{
+                background-color: yellow;
+                color: orangered;
+            }
+            ::marker{
+                color: lawngreen;
+                list-style-type: disc;
+            }
+            ul{
+                padding-left: 20px;
+                background-color: rgb(154, 248, 248);
+            }
+            label{
+                margin: 15px 0 0 10px;
+            }
+            input{
+                margin: 10px 0 0 10px;
+            }
+            input[type="submit"]{
+                border: 5px solid rgb(255, 169, 251);
+                border-radius: 10px;
+                box-shadow: -4px -4px 2px 2px rgb(134, 91, 132);
+                transition: 0.5s;
+            }
+            input[type="submit"]:hover{
+                border: 5px solid rgb(255, 169, 251);
+                border-radius: 10px;
+                box-shadow: 0px 0px 2px 4px rgb(241, 125, 236);
+            }
+            .grid{
+                display: grid;
+                grid-template-rows: 200px 200px 200px;
+                grid-template-columns: 200px 200px 200px;
+                gap: 20px 20px;
+                margin-left: 200px;
+                display:none; /* Remove this to restore grid */
+            }
+            div.grid div{
+                color: aqua;
+                background-color: chocolate;
+            }
+            .a{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            .e{
+                /* grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2; */
+                /* grid-row: 1/2;
+                grid-column: 1/4; */
+            }
+            .flexbox{
+                background-color: rgb(154, 248, 248);
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: end;
+                flex-wrap: wrap;
+                height: 100vh;
+                display: none;
+            }
+            div.flexbox div{
+                background-color: aquamarine;
+                height: 200px;
+                width: 200px;
+            }
+            .aa{
+                flex-grow: 1.1;
+                order: 0;
+            }
+            .bb{
+                order: -1;
+            }
+            .mediaq{
+                
+                width: 300px ;
+                height: 300px ;
+                color: rgb(0,99,30);
+                background-color: chartreuse;
+                font-size: 22px;
+            }
+            @media (min-width:900px) and (max-width: 1100px) {
+                .mediaq{
+                color: pink;
+                background-color: chartreuse;
+                font-size: 18px;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="group">
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Aliquid
+                velit cumque debitis, iste explicabo amet exercitationem
+                consequatur
+                maxime dicta ab excepturi saepe repellendus sit temporibus
+                voluptatum voluptas nulla, possimus fuga. <a
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=9s">Hyperlink
+                    without underline.<sup><i class="fa-solid fa-file"></i></sup></a></p>
+            <p class="para1" id="para2">Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Nisi cum vitae magni quaerat illo cumque harum quibusdam
+                amet,
+                officiis ut adipisci ea, voluptatibus similique rerum quis
+                accusamus
+                molestiae! Beatae, et.</p>
+            <p class="para1" style="text-align: right;">Lorem ipsum, dolor sit
+                amet
+                consectetur adipisicing elit.
+                Placeat, ullam suscipit recusandae, odit magnam fuga, itaque
+                minus
+                saepe asperiores fugit voluptatem. Libero doloremque ratione
+                eligendi illum vero, nam error obcaecati.</p>
+        </div>
+
+        <div class="divreplace">
+            <div class="text-container">
+                <h1>Enter a world of high design and excellence</h1>
+            </div>
+        </div>
+        
+        <div>
+            <form action>
+                <br>
+                <label for>First Name:</label>
+                <input required type="text" name id placeholder="John">
+                <br>
+                <label for>Last Name:</label>
+                <input required type="email" name id placeholder="Doe">
+                <br>
+                <label for>Keep info private?</label>
+                <input type="checkbox" name id><label for>Yes</label>
+                <input type="checkbox"><label for>no</label>
+                <br>
+                <input type="submit"
+                    style="background-color: rgb(255, 169, 251);">
+            </form>
+        </div>
+        <h2>H2 tag</h2>
+        <ul>
+            <li>one </li>
+            <li>two </li>
+            <li>three</li>
+        </ul>
+        <div class="flexbox">
+            <div class="aa">one</div>
+            <div class="bb">two</div>
+            <div class="cc">three</div>
+            <div class="dd">four</div>
+            <div class="ee">five</div>
+            <div class="ff">six</div>
+            <div class="gg">seven</div>
+            <div class="hh">eight</div>
+            <div class="ii">nine</div>
+        </div>
+        <div class="grid">
+            <div class="a">one</div>
+            <div class="b">two</div>
+            <div class="c">three</div>
+            <div class="d">four</div>
+            <div class="e">five</div>
+            <div class="f">six</div>
+            <div class="g">seven</div>
+            <div class="h">eight</div>
+            <div class="i">nine</div>
+        </div>
+
+        <div class="mediaq">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id eveniet architecto nesciunt culpa ipsum, sed nostrum iste repellat at laudantium.
+        </div>
+        
+        <p class="para1"
+            style="color: hotpink; text-align: justify; text-transform: lowercase;">Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Eligendi sed
+            incidunt, dignissimos debitis optio similique id architecto enim
+            repellat ad et nesciunt placeat exercitationem hic iure repudiandae
+            delectus corporis? A laboriosam atque necessitatibus id alias? Error
+            corporis asperiores quasi quae maxime iusto voluptates fugiat et
+            fugit! Officiis porro dolorem dolor odio ea optio labore, vel, hic
+            iure distinctio ex suscipit, necessitatibus fuga voluptatibus
+            laudantium. Quisquam sapiente consequuntur dolorum vel temporibus
+            amet fuga quidem rem delectus cupiditate, laborum debitis ad
+            aspernatur blanditiis. Libero nesciunt porro recusandae consequatur
+            aliquam esse asperiores, velit animi quod dolores nisi a commodi
+            harum nihil, quos molestias sint alias illo laudantium numquam
+            expedita quo necessitatibus? Neque doloribus laudantium unde nam
+            laborum quos sequi dicta magnam facilis doloremque nulla
+            necessitatibus, blanditiis earum culpa. Numquam, consectetur.
+            Dignissimos saepe, velit reiciendis dolor est ipsum. Ipsa, nemo
+            harum ducimus odit non labore laudantium vero, accusantium provident
+            mollitia nihil tempore, incidunt optio nam nostrum dicta illum ad.
+            Mollitia, distinctio cumque maiores minima veritatis aperiam non
+            harum magnam odit error laborum voluptatibus quae neque ab explicabo
+            recusandae tenetur temporibus vero cum expedita sequi. Repellendus
+            mollitia velit ipsum quasi, sit quisquam obcaecati amet et
+            necessitatibus veniam vero aliquid molestiae! Fugiat excepturi ut
+            dolorum consectetur reprehenderit iusto odit voluptates ipsa facilis
+            sapiente ex similique, consequatur qui quis commodi recusandae cum
+            placeat ad magnam. Excepturi voluptates officiis reiciendis nobis
+            ullam aliquam dolorum, culpa modi provident maiores eaque voluptatem
+            facere quo molestiae ipsa voluptatibus quibusdam porro temporibus
+            assumenda tenetur consectetur vitae. Facere architecto magnam rerum
+            similique, porro molestias praesentium quos ex eius asperiores
+            libero sapiente illum corrupti ratione! Expedita sint magni
+            repudiandae, possimus sit ad quidem consequuntur omnis ea saepe sunt
+            porro voluptatibus temporibus ullam totam quisquam suscipit quaerat
+            aliquam molestias nesciunt. Est, ullam eius distinctio vel nesciunt
+            veniam ratione tempore ducimus ipsum, perferendis dolores nemo
+            beatae nulla possimus explicabo deserunt odit laborum, mollitia
+            earum fugiat reprehenderit? Id impedit sit dolorem error soluta
+            provident molestias iusto quo consequatur natus iste nihil, dolorum
+            maxime quod quidem? Quod eius eligendi corrupti tenetur? Quod minus
+            quasi maxime reprehenderit soluta, vel ex alias eius consequuntur
+            repellendus iusto quam laborum molestiae dolore magnam accusamus
+            voluptatibus explicabo necessitatibus. Deleniti, minus. Impedit nisi
+            cupiditate esse nobis totam molestiae architecto, odit sint non eum
+            similique explicabo modi voluptatibus mollitia laborum doloremque
+            autem tempore hic asperiores necessitatibus? Eaque, aut consequatur
+            id vitae minus atque suscipit iusto voluptate voluptatem, numquam,
+            dicta tempora! Explicabo nihil assumenda, iusto asperiores quo porro
+            minus totam deleniti culpa eveniet vero ullam laboriosam molestias
+            quam, vel facilis. Odio atque id, aperiam nemo facilis saepe quam
+            dolor pariatur voluptatem fugiat est voluptatibus repellendus vero
+            magnam quos, deserunt libero sapiente non minima quod porro quo
+            voluptas fuga assumenda. Atque et in omnis officiis error amet
+            voluptate officia similique facere? At saepe autem iure architecto
+            labore unde quod quia, similique, quam nam amet tenetur veniam
+            dolor. Quod libero ex numquam? Animi rerum sunt qui ratione ab
+            blanditiis vel, alias quos explicabo dolorum ipsum minima? Veritatis
+            reprehenderit quisquam voluptatem odit sequi mollitia error dolorum
+            sapiente iusto voluptas rerum, itaque maxime quidem! Tenetur autem,
+            fugiat ipsum impedit at amet magnam, commodi atque incidunt
+            temporibus quaerat quam. Magnam voluptates sit est eos accusantium
+            nam commodi cum blanditiis placeat voluptatum sequi dolores ullam
+            odit ipsa ab vel magni hic alias, sunt neque libero ratione quasi.
+            Porro fugiat quos ratione obcaecati modi vitae eligendi possimus
+            nesciunt ea? Mollitia, nesciunt eligendi libero odio commodi aliquam
+            reprehenderit natus. Magni expedita recusandae quisquam labore
+            dolores optio, tempora fugit aliquam. Deserunt voluptas pariatur
+            dolorum, quae modi tempore? Assumenda totam similique natus officiis
+            libero saepe dolor, quae commodi consectetur maxime quidem animi
+            quod dignissimos deleniti ratione voluptatibus earum! Sint sunt unde
+            doloribus blanditiis adipisci eveniet pariatur iste et! Repudiandae
+            aut commodi inventore enim sunt libero, quam nesciunt facere nihil
+            dolor impedit ad est ratione doloribus quibusdam illum illo
+            incidunt, consectetur, vitae unde? Expedita obcaecati ratione animi
+            modi, placeat dolorem quae! Voluptatum repellat repudiandae
+            praesentium voluptatem nostrum quod pariatur, voluptates qui
+            laudantium ducimus architecto iusto rerum cupiditate atque sed
+            corporis ea quas quo sapiente voluptas delectus saepe, magni id
+            quaerat! Dolor delectus natus pariatur nam, distinctio fugit quasi
+            explicabo numquam possimus cupiditate nostrum similique neque autem
+            labore adipisci iure rem at atque impedit sit id aspernatur? Culpa
+            sint rerum iste doloribus sequi nihil cupiditate, debitis sapiente
+            voluptatum fugiat et perferendis eius necessitatibus, suscipit
+            distinctio neque, quis illum consectetur minima totam nemo nesciunt?
+            Ea laboriosam veritatis officiis fugit praesentium aperiam
+            consequuntur ab tenetur recusandae, quidem doloremque voluptas quo
+            nihil veniam molestiae modi excepturi facere. Explicabo vero eius
+            doloribus ipsam porro quisquam quo corporis aliquid. Maxime ea totam
+            autem eum nam debitis. Cupiditate recusandae voluptatum ipsa autem,
+            assumenda deleniti temporibus debitis deserunt eum. Facere adipisci
+            laboriosam quisquam harum saepe dolorem ut, cupiditate asperiores
+            consectetur ipsam quibusdam ipsa ratione quasi quis laborum officiis
+            eligendi officia veritatis quo est. Laboriosam necessitatibus
+            officia alias illum, voluptates atque, sit, ratione eaque id
+            consequuntur neque quaerat labore adipisci! Praesentium nemo
+            distinctio repudiandae quasi et fugit voluptas minima delectus
+            consequatur explicabo obcaecati, laudantium mollitia ipsum. Culpa,
+            iure quasi porro suscipit eveniet tenetur ea dolor, nostrum quas,
+            sed facilis eos totam doloremque est! Officiis eos explicabo,
+            nesciunt illum voluptate blanditiis odio mollitia corporis
+            repellendus facilis autem repudiandae illo. Quo ullam eum architecto
+            illum, inventore non quia quod similique molestiae cupiditate ut a
+            voluptate! Eius, non! Praesentium architecto ex ipsam? Veniam dicta
+            sit libero earum cum eligendi corporis consequuntur hic praesentium
+            aspernatur quaerat et quasi dignissimos maxime expedita error
+            quisquam quos, quo soluta facilis voluptatem. Esse ab doloremque
+            perferendis praesentium eaque ipsa similique, dolorem eos provident
+            voluptatem ducimus, nihil quasi nisi, voluptatum magni aliquam
+            officiis illo dolore unde. Nam deleniti magni, voluptates
+            voluptatibus earum itaque voluptate nulla harum possimus voluptatem
+            asperiores aliquid nihil sapiente fuga eos repudiandae facilis
+            officia, consectetur vel. Enim beatae commodi eius quis obcaecati ea
+            consequatur, saepe modi! Iure nihil consectetur, quisquam nemo dicta
+            sapiente explicabo aliquam aspernatur ex recusandae. Quasi eos
+            dignissimos dolorem dolore est architecto nesciunt odio illo totam,
+            fuga nihil dicta vitae vel dolores quas natus quis autem eaque,
+            necessitatibus magni!</p>
+    </body>
+</html>
