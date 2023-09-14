@@ -7,10 +7,11 @@
 }
 h1{
     
-    color: rebeccapurple;
+    /* color: rebeccapurple; */
+    color: azure;
 }
 .hero-img{
-    background-image: url(images/food1.jpg);
+    background-image: url(images/food1.webp);
     width: 100%;
     height: 100vh;
     background-position: center center;
@@ -97,4 +98,9 @@ h1{
 .product-list{
     float: left;
     width: 33.33%;
+}
+.product-list-top{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60px;
 }
