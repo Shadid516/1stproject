@@ -1,2 +1,4 @@
-var first = "Hello world";
-document.write(first);
+var name="Meta brains";
+var name="None";
+name="Hello Everyone";
+document.write(name);
