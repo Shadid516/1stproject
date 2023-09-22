@@ -1,9 +1,33 @@
 // abc()
-ayylmao();
+//ayylmao();
 
-var a = "Test";
-var b = a.toLowerCase();
-document.write(b);
+let a = Math.floor(0.9999999999);
+document.write(a);
+
+//Closure allows functions to access variables from heap memory
+function closureExample() {
+    function iNeedClosure() {
+        let a = 10;
+        return function () {
+            a++;
+            return a;
+        };
+    }
+
+    let closureFunction = iNeedClosure();
+    let result = closureFunction();
+    document.write(result);
+}
+
+function functionWithinObjectEx() {
+    const person = {
+        wtfIsThis: () => {
+            console.log(this);
+            console.log('Yeaaa boi');
+        }
+    };
+    person.wtfIsThis();
+}
 
 function abc() {
     var c = prompt("Insert your name");
