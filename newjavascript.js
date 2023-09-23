@@ -1,8 +1,29 @@
 // abc()
 //ayylmao();
 
-let a = Math.floor(0.9999999999);
-document.write(a);
+// Get all elements with the class name "product-list"
+const productLists = document.getElementsByClassName("product-list");
+
+// Loop through each element and add a click event handler
+for (let i = 0; i < productLists.length; i++) {
+    productLists[i].addEventListener("click", fun);
+}
+
+//set background to a specific color
+function fun() {
+    document.getElementsByClassName("product-list").style.background = "red";
+}
+
+
+
+function floorTest(parms) {
+    let a = Math.floor(parms);
+    document.write(a);
+}
+
+function jsbackground1ColorTransformRed() {
+    document.querySelector("#jsbackground1").style.backgroundColor = "red";
+}
 
 //Closure allows functions to access variables from heap memory
 function closureExample() {
