@@ -10,8 +10,11 @@ for (let i = 0; i < productLists.length; i++) {
 }
 
 //set background to a specific color
-function fun() {
-    document.getElementsByClassName("product-list").style.background = "red";
+function fun(event) {
+    // 'event.target' refers to the clicked element
+    //event.target.style.backgroundColor = "red";
+    event.target.style.zIndex = 2;
+
 }
 
 
