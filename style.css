@@ -1,93 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto:wght@100;300;400;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-h1{
-    
+
+h1 {
+
     /* color: rebeccapurple; */
     color: azure;
 }
-.hero-img{
+
+.hero-img {
     background-image: url(images/food1.webp);
     width: 100%;
     height: 100vh;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative; /*.hero-wrapper will not work if hero-img position isn't relative*/
+    position: relative;
+    /*.hero-wrapper will not work if hero-img position isn't relative*/
 }
-.hero-wrapper{
+
+.hero-wrapper {
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
+    /* Center horizontally */
     align-items: center;
-    
+
 }
-.hero-wrapper h1{
+
+.hero-wrapper h1 {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
-.hero-wrapper p{
+
+.hero-wrapper p {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
 }
-.hero-wrapper .form-code{
+
+.hero-wrapper .form-code {
     display: block;
     width: 100%;
     max-width: 400px;
-    
+
 }
-.hero-wrapper .form-code *{
-    display: block; /* Make the button a block-level element */
-    margin: 0 auto; /* Center horizontally */
+
+.hero-wrapper .form-code * {
+    display: block;
+    /* Make the button a block-level element */
+    margin: 0 auto;
+    /* Center horizontally */
 }
-.hero-wrapper .form-code label{
+
+.hero-wrapper .form-code label {
     margin-top: 20px;
     text-align: center;
 }
-.hero-wrapper .form-code input{
+
+.hero-wrapper .form-code input {
     height: 50px;
-    width: 100%; /* Use 100% width to fill the container */
-    max-width: 300px; /* Adjust as needed */
+    width: 100%;
+    /* Use 100% width to fill the container */
+    max-width: 300px;
+    /* Adjust as needed */
     border-radius: 30px;
 }
-.hero-wrapper .form-code input::placeholder{
+
+.hero-wrapper .form-code input::placeholder {
     padding-left: 25%;
 }
-.hero-wrapper .form-code button{
+
+.hero-wrapper .form-code button {
     width: 80px;
     height: 40px;
     margin-top: 10px;
-    background-color: rgb(48,132,132);
+    background-color: rgb(48, 132, 132);
     color: azure;
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 1.5px;
-    outline: solid rgb(48,132,132) 2px;
+    outline: solid rgb(48, 132, 132) 2px;
     border: none;
     border-radius: 30px;
     transition: 0.7s;
 }
-.hero-wrapper .form-code button:hover{
+
+.hero-wrapper .form-code button:hover {
     width: 90px;
     background-color: transparent;
     color: rgb(253, 253, 253);
     font-size: 22px;
     letter-spacing: 1.7px;
-    outline: dashed rgb(48,132,132) 2px;
+    outline: dashed rgb(48, 132, 132) 2px;
     border-radius: 5px;
     transition: 0.5s;
 }
+
 /* Product List */
 .product {
     padding-top: 50px;
@@ -101,8 +121,10 @@ h1{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px; /* Set a maximum width for the flex container */
-    margin: 0 auto; /* Center the flex container horizontally */
+    max-width: 1200px;
+    /* Set a maximum width for the flex container */
+    margin: 0 auto;
+    /* Center the flex container horizontally */
 }
 
 .product-list {
@@ -119,4 +141,3 @@ h1{
     font-size: 60px;
     color: rgb(219, 147, 95);
 }
-
