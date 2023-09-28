@@ -5,8 +5,8 @@
 const productLists = document.getElementsByClassName("product-list");
 
 // Loop through each element and add a click event handler
-for (let i = 0; i < productLists.length; i++) {
-    productLists[i].addEventListener("click", fun);
+for (const element of productLists) {
+    element.addEventListener("click", fun);
 }
 
 //set background to a specific color
@@ -54,8 +54,8 @@ function functionWithinObjectEx() {
 }
 
 function abc() {
-    var c = prompt("Insert your name");
-    var a = confirm("Do you think that you are a human?");
+    let c = prompt("Insert your name");
+    let a = confirm("Do you think that you are a human?");
     document.write(a);
     if (a) {
         alert("ok " + c);
@@ -65,7 +65,7 @@ function abc() {
     }
 }
 function ayylmao() {
-    var a = {
+    let a = {
         firstname: 'Jaloppy',
         lastname: 'Mills',
         age: 69,
