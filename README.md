@@ -3,7 +3,6 @@ My personal website for learning new webdev technologies, my permanent projects 
 
 ## Table of Contents
 
-- [Shadid516.github.io](#shadid516.github.io)
 - [Description](#Description)
 - [Contribution](#How-to-contribute)
 
